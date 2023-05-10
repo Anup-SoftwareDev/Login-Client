@@ -9,8 +9,8 @@ import { Auth0Provider } from '@auth0/auth0-react';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Auth0Provider
-    domain ="webdev.au.auth0.com"
-    clientId="xKMrIws9VQILkaD42bQS5JrdP3M2HDSm"
+    domain = {process.env.REACT_APP_DOMAIN}
+    clientId={process.env.REACT_APP_CLIENT_ID}
     authorizationParams={{
       audience: process.env.REACT_APP_BASE_URL,
     }}  
