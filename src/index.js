@@ -12,7 +12,7 @@ root.render(
     domain = {process.env.REACT_APP_DOMAIN}
     clientId={process.env.REACT_APP_CLIENT_ID}
     authorizationParams={{
-      audience: process.env.REACT_APP_BASE_URL,
+      audience: process.env.REACT_APP_AUDIENCE,
     }}  
     redirect_uri = {window.location.origin}
     scope="openid profile email"
