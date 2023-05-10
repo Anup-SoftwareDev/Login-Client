@@ -13,8 +13,9 @@ function App() {
         isAuthenticated,
         getAccessTokenSilently
       } = useAuth0();
-
+      
     function callApi(){
+      console.log(process.env.REACT_APP_BASE_URL)
       axios.get(process.env.REACT_APP_BASE_URL)
            .then (response => console.log(response.data))
            .catch(error=> console.log(error.message))
