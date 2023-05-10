@@ -12,7 +12,7 @@ root.render(
     domain ="webdev.au.auth0.com"
     clientId="xKMrIws9VQILkaD42bQS5JrdP3M2HDSm"
     authorizationParams={{
-      audience: "http://localhost:4000/",
+      audience: process.env.REACT_APP_BASE_URL,
     }}  
     redirect_uri = {window.location.origin}
     scope="openid profile email"
